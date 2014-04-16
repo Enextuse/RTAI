@@ -1,0 +1,9 @@
+OPTDIRS =
+
+if CONFIG_RTAI_RTDM
+OPTDIRS += rtdm
+endif
+
+OPTDIRS += drivers
+
+SUBDIRS = $(OPTDIRS)
